@@ -1,0 +1,2 @@
+# NotPokemon
+Copyright no one

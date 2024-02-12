@@ -31,25 +31,25 @@ while True:
         squirtle()
         break
 
-    if starter_choice == "Charmander" or starter_choice == "charmander" or starter_choice == "c" or starter_choice == "CHARMANDER":
+    if starter_choice.lower == "charmander" or starter_choice == "c":
         starter = "Charmander"
         starter_health = 12
         charmander()
         break
 
-    if starter_choice == "Bulbasaur" or starter_choice == "bulbasaur" or starter_choice == "b" or starter_choice == "BULBASAUR":
+    if starter_choice.lower == starter_choice == "bulbasaur" or starter_choice == "b":
         starter = "Bulbasaur"
         starter_health = 12
         bulbasaur()
         break
 
-    if starter_choice == "Pikachu" or starter_choice == "pikachu" or starter_choice == "p" or starter_choice == "pika" or starter_choice == "Pika" or starter_choice == "PIKACHU":
+    if starter_choice.lower == starter_choice == "pikachu" or starter_choice == "p":
         starter = "Pikachu"
         starter_health = 14
         pikachu()
         break
 
-    if starter_choice == "upupdowndownleftrightleftrightbastart":
+    if starter_choice.lower == "upupdowndownleftrightleftrightbastart":
         starter = "Mew"
         starter_health = 99
         mew()
@@ -69,7 +69,7 @@ input("As you and " + starter + " exit the professors workshop you are faced wit
 while True:
     the_choice = input("So, what will it be? Are you ready?")
 
-    if the_choice == "yes" or the_choice == "Yes" or the_choice == "y" or the_choice == "Y":
+    if the_choice.lower == "yes" or the_choice == "y":
         input("You step forward, feeling inspired by the seemingly limitless posibilities that await you and " + starter + ".")
         break
 
@@ -190,7 +190,7 @@ while True :
                 input(starter + " took no damage!? Who uses String Shot anyway?")
 
             if attack == "Bug Bite" :
-                input("Pidgey used Bug Bite!")
+                input("Caterpie used Bug Bite!")
                 hit = int(random.choice(bite_dmg))
                 input("It hits for " + str(hit) + " damage!")
                 starter_health = starter_health - hit

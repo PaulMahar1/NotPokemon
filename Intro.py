@@ -31,25 +31,25 @@ while True:
         squirtle()
         break
 
-    if starter_choice.lower == "charmander" or starter_choice == "c":
+    elif starter_choice.lower == "charmander" or starter_choice == "c":
         starter = "Charmander"
         starter_health = 12
         charmander()
         break
 
-    if starter_choice.lower == starter_choice == "bulbasaur" or starter_choice == "b":
+    elif starter_choice.lower == starter_choice == "bulbasaur" or starter_choice == "b":
         starter = "Bulbasaur"
         starter_health = 12
         bulbasaur()
         break
 
-    if starter_choice.lower == starter_choice == "pikachu" or starter_choice == "p":
+    elif starter_choice.lower == starter_choice == "pikachu" or starter_choice == "p":
         starter = "Pikachu"
         starter_health = 14
         pikachu()
         break
 
-    if starter_choice.lower == "upupdowndownleftrightleftrightbastart":
+    elif starter_choice.lower == "upupdowndownleftrightleftrightbastart":
         starter = "Mew"
         starter_health = 99
         mew()
@@ -92,46 +92,46 @@ enemy_health = 12
 if battle_enemy == "Pidgey" and starter == "Squirtle" :
     squirtle_vs_pidgey()
     input("A wild Pidgey appeared!")
-if battle_enemy == "Ratata" and starter == "Squirtle" : 
+elif battle_enemy == "Ratata" and starter == "Squirtle" : 
     squirtle_vs_pidgey()
     input("A wild Ratata appeared!")
-if battle_enemy == "Caterpie" and starter == "Squirtle" :
+elif battle_enemy == "Caterpie" and starter == "Squirtle" :
     squirtle_vs_pidgey()
     input("A wild Caterpie appeared!")
-if battle_enemy == "Pidgey" and starter == "Charmander" :
+elif battle_enemy == "Pidgey" and starter == "Charmander" :
     squirtle_vs_pidgey()
     input("A wild Pidgey appeared!")
-if battle_enemy == "Ratata" and starter == "Charmander" :
+elif battle_enemy == "Ratata" and starter == "Charmander" :
     squirtle_vs_pidgey()
     input("A wild Ratata appeared!")
-if battle_enemy == "Caterpie" and starter == "Charmander" :
+elif battle_enemy == "Caterpie" and starter == "Charmander" :
     squirtle_vs_pidgey()
     input("A wild Caterpie appeared!")
-if battle_enemy == "Pidgey" and starter == "Bulbasaur" : 
+elif battle_enemy == "Pidgey" and starter == "Bulbasaur" : 
     squirtle_vs_pidgey()
     input("A wild Pidgey appeared!")
-if battle_enemy == "Ratata" and starter == "Bulbasaur" :
+elif battle_enemy == "Ratata" and starter == "Bulbasaur" :
     squirtle_vs_pidgey()
     input("A wild Ratata appeared!")
-if battle_enemy == "Caterpie" and starter == "Bulbasaur" :
+elif battle_enemy == "Caterpie" and starter == "Bulbasaur" :
     squirtle_vs_pidgey()
     input("A wild Caterpie appeared!")
-if battle_enemy == "Pidgey" and starter == "Pikachu" : 
+elif battle_enemy == "Pidgey" and starter == "Pikachu" : 
     squirtle_vs_pidgey()
     input("A wild Pidgey appeared!")
-if battle_enemy == "Ratata" and starter == "Pikachu" :
+elif battle_enemy == "Ratata" and starter == "Pikachu" :
     squirtle_vs_pidgey()
     input("A wild Ratata appeared!")
-if battle_enemy == "Caterpie" and starter == "Pikachu" :
+elif battle_enemy == "Caterpie" and starter == "Pikachu" :
     squirtle_vs_pidgey()
     input("A wild Caterpie appeared!")
-if battle_enemy == "Pidgey" and starter == "Mew" : 
+elif battle_enemy == "Pidgey" and starter == "Mew" : 
     squirtle_vs_pidgey()
     input("A wild Pidgey appeared!")
-if battle_enemy == "Ratata" and starter == "Mew" :
+elif battle_enemy == "Ratata" and starter == "Mew" :
     squirtle_vs_pidgey()
     input("A wild Ratata appeared!")
-if battle_enemy == "Caterpie" and starter == "Mew" :
+elif battle_enemy == "Caterpie" and starter == "Mew" :
     squirtle_vs_pidgey()
     input("A wild Caterpie appeared!")
 
@@ -152,12 +152,12 @@ while True :
                 starter_health = starter_health - hit
                 input(starter + " has " + str(starter_health) + "HP left.")
 
-            if attack == "Sand Attack" :
+            elif attack == "Sand Attack" :
                 input("Pidgey used Sand Attack!")
                 input(starter + " took no damage!? Who uses Sand Attack anyway?")
 
 
-    if battle_enemy == "Ratata" :
+    elif battle_enemy == "Ratata" :
             p_a = ("Quick Attack" , "Tail Whip")
             quick_dmg = (1,2,3,4)
             attack = random.choice(p_a)
@@ -168,12 +168,12 @@ while True :
                 starter_health = starter_health - hit
                 input(starter + " has " + str(starter_health) + "HP left.")
 
-            if attack == "Tail Whip" :
+            elif attack == "Tail Whip" :
                 input("Ratata used Tail Whip!")
                 input(starter + " took no damage!? Who uses Tail Whip anyway?")
 
 
-    if battle_enemy == "Caterpie" :
+    elif battle_enemy == "Caterpie" :
             p_a = ("Tackle" , "String Shot" , "Bug Bite")
             tackle_dmg = (1,2,3,4)
             bite_dmg = (2,3,4,5,6)
@@ -185,11 +185,11 @@ while True :
                 starter_health = starter_health - hit
                 input(starter + " has " + str(starter_health) + "HP left.")
 
-            if attack == "String Shot" :
+            elif attack == "String Shot" :
                 input("Caterpie used String Shot!")
                 input(starter + " took no damage!? Who uses String Shot anyway?")
 
-            if attack == "Bug Bite" :
+            elif attack == "Bug Bite" :
                 input("Caterpie used Bug Bite!")
                 hit = int(random.choice(bite_dmg))
                 input("It hits for " + str(hit) + " damage!")
@@ -209,14 +209,14 @@ while True :
                 enemy_health = enemy_health - en_hit
                 input(battle_enemy + " has " + str(enemy_health) + "HP left.")
 
-            if player_attack == "Vine Whip" or player_attack == "vine whip" :
+            elif player_attack == "Vine Whip" or player_attack == "vine whip" :
                 input("Bulbasaur used Vine Whip!")
                 en_hit = int(random.choice(vine_dmg))
                 input("It hits for " + str(en_hit) + " damage!")
                 enemy_health = enemy_health - en_hit
                 input(battle_enemy + " has " + str(enemy_health) + "HP left.")
 
-    if starter == "Squirtle" :
+    elif starter == "Squirtle" :
             player_attack = input("Which attack will you use? Tackle or Water Gun: ")
             tackle_dmg = (1,2,3,4)
             water_dmg = (3,4,5,6)
@@ -227,14 +227,14 @@ while True :
                 enemy_health = enemy_health - en_hit
                 input(battle_enemy + " has " + str(enemy_health) + "HP left.")
 
-            if player_attack == "Water Gun" or player_attack == "water gun" :
+            elif player_attack == "Water Gun" or player_attack == "water gun" :
                 input("Squirtle used Water Gun!")
                 en_hit = int(random.choice(water_dmg))
                 input("It hits for " + str(en_hit) + " damage!")
                 enemy_health = enemy_health - en_hit
                 input(battle_enemy + " has " + str(enemy_health) + "HP left.")
 
-    if starter == "Charmander" :
+    elif starter == "Charmander" :
             player_attack = input("Which attack will you use? Tackle or Flamethrower: ")
             tackle_dmg = (1,2,3,4)
             flame_dmg = (3,4,5,6)
@@ -245,14 +245,14 @@ while True :
                 enemy_health = enemy_health - en_hit
                 input(battle_enemy + " has " + str(enemy_health) + "HP left.")
 
-            if player_attack == "Flamethrower" or player_attack == "flamethrower" :
+            elif player_attack == "Flamethrower" or player_attack == "flamethrower" :
                 input("Charmander used Flamethrower!")
                 en_hit = int(random.choice(flame_dmg))
                 input("It hits for " + str(en_hit) + " damage!")
                 enemy_health = enemy_health - en_hit
                 input(battle_enemy + " has " + str(enemy_health) + "HP left.")
 
-    if starter == "Pikachu" :
+    elif starter == "Pikachu" :
             player_attack = input("Which attack will you use? Tackle or Thunderbolt: ")
             tackle_dmg = (1,2,3,4)
             shock_dmg = (3,4,5,6)
@@ -263,14 +263,14 @@ while True :
                 enemy_health = enemy_health - en_hit
                 input(battle_enemy + " has " + str(enemy_health) + "HP left.")
 
-            if player_attack == "Thunderbolt" or player_attack == "thunderbolt" :
+            elif player_attack == "Thunderbolt" or player_attack == "thunderbolt" :
                 input("Pikachu used Thunderbolt!")
                 en_hit = int(random.choice(shock_dmg))
                 input("It hits for " + str(en_hit) + " damage!")
                 enemy_health = enemy_health - en_hit
                 input(battle_enemy + " has " + str(enemy_health) + "HP left.")
 
-    if starter == "Mew" :
+    elif starter == "Mew" :
             player_attack = input("Which attack will you use? Pound or Psychic: ")
             pound_dmg = (4,5,6)
             psy_dmg = (97,98,99)
@@ -281,7 +281,7 @@ while True :
                 enemy_health = enemy_health - en_hit
                 input(battle_enemy + " has " + str(enemy_health) + "HP left.")
 
-            if player_attack == "Psychic" or player_attack == "psychic" :
+            elif player_attack == "Psychic" or player_attack == "psychic" :
                 input("Mew used Psychic! Its overkill!!")
                 en_hit = int(random.choice(psy_dmg))
                 input("It hits for " + str(en_hit) + " damage!")
@@ -290,12 +290,12 @@ while True :
 
     if enemy_health > 0 and starter_health > 0 :
          continue
-    if enemy_health < 1 and starter_health > 0 :
+    elif enemy_health < 1 and starter_health > 0 :
          input("You won!!")
          input(starter + " looks up to you, as proud as can be. You tell them how amazing they did as you scoop them up onto your shoulder and start running once again!")
          input("You are ready to begin your journey to become a pokemon master.")
          break
-    if enemy_health > 0 and starter_health < 1 :
+    elif enemy_health > 0 and starter_health < 1 :
          print("You lost!? But thats ok, it was just your first battle.")
          break
 
